@@ -26,6 +26,7 @@ public:
             }
             ptr = ptr->next;
         }
+        // 其中一个链表已经遍历到尾部，直接添加另一个链表剩余节点
         if (l1 == NULL) {
             ptr->next = l2;
         } else {
